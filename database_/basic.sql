@@ -225,3 +225,53 @@ group by continent
 having sum(population) > 500000000;
 
 
+## quiz 2
+
+# 1.
+select count(distinct continent) as count
+from country
+;
+
+
+# 2.
+select continent, count(continent) as count
+from country
+group by continent
+order by count desc
+;
+
+
+# 3.
+select countrycode , sum(population) as population
+from city
+group by countrycode
+having population > 50000000
+order by population desc
+;
+
+
+# 4.
+select cl.language, count(cl.language) as count
+from countrylanguage cl
+group by cl.language
+order by count desc
+limit 4, 6
+;
+
+
+# 5.
+select cl.language, count(cl.language) as count
+from countrylanguage cl
+group by cl.language
+having count >= 15
+order by count desc
+;
+
+
+# 6.
+select continent, sum(surfacearea) as surfacearea
+from country
+group by continent
+order by surfacearea desc
+;
+

@@ -6,3 +6,7 @@
 *.csv
 *.pkl
 *.tsv
+
+## ignore quiz, answer
+*answer*.ipynb
+*quiz*.ipynb

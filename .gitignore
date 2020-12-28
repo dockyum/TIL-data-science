@@ -1,12 +1,18 @@
 .DS_store
+
+## ignore pycache
 .ipynb_checkpoints
+__pycache__/
+
+## ignore data files
 *.txt
 *.png
 *.mp4
 *.csv
 *.pkl
 *.tsv
+*MATL*
 
 ## ignore quiz, answer
-*answer*.ipynb
-*quiz*.ipynb
+*answer*
+*quiz*

@@ -18,3 +18,12 @@ __pycache__/
 ## ignore quiz, answer
 *answer*
 *quiz*
+
+## ignore scrapy examples project
+gmarket/
+naver_article/
+naver_movie/
+playnomore/
+
+## ignore shellscript 
+*.sh
